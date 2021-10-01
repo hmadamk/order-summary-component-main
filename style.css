@@ -1,0 +1,103 @@
+:root{
+    --Pale-blue:hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background:url(images/pattern-background-mobile.svg) no-repeat;
+    background-color: var(--Pale-blue);
+    display: flex;
+    background-size: 100vw;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+@media(min-width:770px){
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+}
+.card{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color:#fff;
+    text-align: center;
+    width:min(90vw,450px);
+}
+.card > img{
+    display: block;
+    width:100%;
+}
+.card .content{
+    padding-inline:2rem;
+}
+.card h2{
+    color:var(--Dark-blue)
+}
+.card .content > p{
+    font-size:1.1rem;
+    padding-inline:1rem;
+    color:var(--Desaturated-blue);
+    line-height: 1.6;
+}
+.card .price{
+    display: flow-root;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding:1rem;
+    
+}
+.card .price img{
+    float:left;
+    margin-right:2rem;
+}
+.card .price .info{
+    float:left;
+}
+.price .info p{
+    margin:.1rem;
+    color:var(--Dark-blue);
+    font-weight: 900;
+}
+.price .info span{
+    color:var(--Desaturated-blue);
+}
+.card .price a{
+    float:right;
+    margin-top: 1rem;
+    color:var(--Bright-blue);
+    font-weight: bold;
+}
+.card button{
+    display: block;
+    margin-inline:auto;
+    margin-top:2rem;
+    border:none;
+    background-color: var(--Bright-blue);
+    padding:1em;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    color:var(--Very-pale-blue);
+    width:100%;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px  -11px var(--Bright-blue);
+}
+.card .content > a{
+    display: block;
+    margin-inline:auto;
+    margin-top:1rem;
+    border:none;
+    padding:1em;
+    border-radius: 10px;
+    color:var(--Desaturated-blue);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 900;
+}
