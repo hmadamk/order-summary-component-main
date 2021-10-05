@@ -42,7 +42,8 @@ h1{
     padding-inline:2rem;
 }
 .card h2{
-    color:var(--Dark-blue)
+    color:var(--Dark-blue);
+	font-size:2rem;
 }
 .card .content > p{
     font-size:1.1rem;
